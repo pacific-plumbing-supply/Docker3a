@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  docker3:
+    image: ${DOCKER_REGISTRY-}docker3
+    build:
+      context: .\Docker3
+      dockerfile: Dockerfile
+    security_opt:
+    - credentialspec=file://pacificent_pacws-is-dev.json

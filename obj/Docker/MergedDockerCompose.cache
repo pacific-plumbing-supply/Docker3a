@@ -1,0 +1,11 @@
+services:
+  docker3:
+    build:
+      context: C:\Users\daves\source\repos\Docker3\Docker3
+      dockerfile: Dockerfile
+    image: docker3
+    ports:
+    - target: 80
+    security_opt:
+    - credentialspec=file://pacificent_pacws-is-dev.json
+version: '3.4'

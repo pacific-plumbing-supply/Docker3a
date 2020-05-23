@@ -1,0 +1,6 @@
+version: '3.4'
+
+services:
+  docker3:
+    ports:
+      - "80"
